@@ -4,6 +4,38 @@ Browse available tools by category. Each entry includes a description and file p
 
 ---
 
+## Plugins (Installed)
+
+Plugins installed via the `/plugin` system from external marketplaces.
+
+### /local-review
+- **Source**: `agent37-skills` marketplace
+- **Install**: `/plugin install local-review@agent37-skills`
+- **Description**: Code review uncommitted local changes for bugs, security vulnerabilities, and CLAUDE.md compliance
+- **Features**:
+  - Checks staged and unstaged git changes
+  - Validates against CLAUDE.md guidelines
+  - Scans for bugs, logic errors, edge cases
+  - Security audit (OWASP top 10)
+  - TypeScript type safety checks
+  - Confidence scoring to filter false positives
+- **Tags**: code-review, git, security, bugs, typescript
+
+### /yc-advisor
+- **Source**: `agent37-skills` marketplace
+- **Install**: `/plugin install yc-advisor@agent37-skills`
+- **Description**: YC startup advisor with access to 434 curated resources from Y Combinator's library
+- **Topics covered**:
+  - Fundraising and investor relations
+  - Product-market fit
+  - Team building and hiring
+  - Startup metrics
+  - Pitching and applications
+  - Growth strategies
+- **Tags**: startup, yc, ycombinator, founder, entrepreneurship, fundraising
+
+---
+
 ## Prompts
 
 *No prompts added yet.*

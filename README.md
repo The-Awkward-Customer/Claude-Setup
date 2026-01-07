@@ -2,6 +2,28 @@
 
 A personal repository for collecting reusable Claude Code tools, prompts, and configurations.
 
+## Installed Plugins
+
+Currently installed from the [Agent37 Skills Collection](https://github.com/Agent-3-7/agent37-skills-collection):
+
+| Plugin | Command | Description |
+|--------|---------|-------------|
+| **local-review** | `/local-review` | Code review uncommitted local changes for bugs, security vulnerabilities, and CLAUDE.md compliance. Uses parallel agents for thorough review. |
+| **yc-advisor** | `/yc-advisor` | YC startup advisor with access to 434 curated resources from Y Combinator's library covering fundraising, product-market fit, team building, and more. |
+
+### Installing Plugins
+
+```bash
+# Add a marketplace
+/plugin marketplace add Agent-3-7/agent37-skills-collection
+
+# Install a plugin
+/plugin install local-review@agent37-skills
+/plugin install yc-advisor@agent37-skills
+
+# Restart Claude Code to load new plugins
+```
+
 ## Structure
 
 | Directory | Contents |
