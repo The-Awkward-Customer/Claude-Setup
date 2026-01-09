@@ -16,6 +16,14 @@ Browse available tools by category. Each entry includes a description and file p
 
 **Total**: 3 tools available
 
+### Tools at a Glance
+
+| Tool | Status |
+|------|--------|
+| /local-review | [ALWAYS] |
+| /yc-advisor | [SPECIFIC] |
+| Beads | [EXPERIMENTAL] |
+
 ---
 
 ## Plugins (Installed)
@@ -23,6 +31,8 @@ Browse available tools by category. Each entry includes a description and file p
 Plugins installed via the `/plugin` system from external marketplaces.
 
 ### /local-review
+**Status: [ALWAYS]**
+
 - **Source**: `agent37-skills` marketplace
 - **Install**: `/plugin install local-review@agent37-skills`
 - **Description**: Code review uncommitted local changes for bugs, security vulnerabilities, and CLAUDE.md compliance
@@ -36,6 +46,8 @@ Plugins installed via the `/plugin` system from external marketplaces.
 - **Tags**: code-review, git, security, bugs, typescript
 
 ### /yc-advisor
+**Status: [SPECIFIC]**
+
 - **Source**: `agent37-skills` marketplace
 - **Install**: `/plugin install yc-advisor@agent37-skills`
 - **Description**: YC startup advisor with access to 434 curated resources from Y Combinator's library
@@ -55,6 +67,8 @@ Plugins installed via the `/plugin` system from external marketplaces.
 Standalone tools that integrate with Claude Code and AI agents.
 
 ### Beads
+**Status: [EXPERIMENTAL]**
+
 - **Repository**: [steveyegge/beads](https://github.com/steveyegge/beads)
 - **Description**: A distributed, git-backed issue tracker and memory system for AI coding agents
 - **Install**:

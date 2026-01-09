@@ -10,6 +10,24 @@ A personal collection of reusable tools, prompts, and configurations for Claude 
 2. **Install** → Copy tools to your project or global config
 3. **Contribute** → Create a branch and PR (see [`CLAUDE.md`](CLAUDE.md))
 
+## Tool Status
+
+| Tool | Status | Description |
+|------|--------|-------------|
+| /local-review | [ALWAYS] | Code review before commits |
+| /yc-advisor | [SPECIFIC] | Startup advice when needed |
+| Beads | [EXPERIMENTAL] | Task tracking for AI agents |
+
+### Status Legend
+
+| Status | Meaning |
+|--------|---------|
+| [ALWAYS] | Part of daily workflow |
+| [SOMETIMES] | Regular but not constant use |
+| [SPECIFIC] | Very specific use cases only |
+| [EXPERIMENTAL] | Currently evaluating |
+| [WISHLIST] | On my list to try |
+
 ## Installed Plugins
 
 Currently installed from the [Agent37 Skills Collection](https://github.com/Agent-3-7/agent37-skills-collection):
