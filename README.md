@@ -1,6 +1,14 @@
 # Claude Code Tools & Prompts
 
-A personal repository for collecting reusable Claude Code tools, prompts, and configurations.
+A personal collection of reusable tools, prompts, and configurations for Claude Code.
+
+> **AI Agents**: See [`CLAUDE.md`](CLAUDE.md) for machine-readable instructions on using this repository.
+
+## Quick Start
+
+1. **Browse** → Check [`CATALOG.md`](CATALOG.md) for available tools
+2. **Install** → Copy tools to your project or global config
+3. **Contribute** → Create a branch and PR (see [`CLAUDE.md`](CLAUDE.md))
 
 ## Installed Plugins
 
@@ -46,7 +54,10 @@ Direct Claude Code to this repository and ask it to browse `CATALOG.md` to find 
 2. Update `CATALOG.md` with a description
 3. Include usage instructions in the tool's file or directory
 
-## Files
+## Key Files
 
-- `CATALOG.md` - Browsable index of all available tools
-- `CLAUDE.md` - Instructions for visiting Claude instances
+| File | Purpose |
+|------|---------|
+| [`CATALOG.md`](CATALOG.md) | Browsable index of all available tools |
+| [`CLAUDE.md`](CLAUDE.md) | Instructions for AI agents visiting this repo |
+| [`AGENTS.md`](AGENTS.md) | Beads task tracking instructions |
