@@ -2,6 +2,20 @@
 
 Browse available tools by category. Each entry includes a description and file path.
 
+## Quick Index
+
+| Category | Count | Jump |
+|----------|-------|------|
+| Plugins | 2 | [→ Plugins](#plugins-installed) |
+| External Tools | 1 | [→ External Tools](#external-tools) |
+| Prompts | 0 | [→ Prompts](#prompts) |
+| MCP Servers | 0 | [→ MCP Servers](#mcp-servers) |
+| Skills | 0 | [→ Skills](#skills) |
+| Hooks | 0 | [→ Hooks](#hooks) |
+| Templates | 0 | [→ Templates](#templates) |
+
+**Total**: 3 tools available
+
 ---
 
 ## Plugins (Installed)
