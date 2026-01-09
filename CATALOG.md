@@ -36,6 +36,41 @@ Plugins installed via the `/plugin` system from external marketplaces.
 
 ---
 
+## External Tools
+
+Standalone tools that integrate with Claude Code and AI agents.
+
+### Beads
+- **Repository**: [steveyegge/beads](https://github.com/steveyegge/beads)
+- **Description**: A distributed, git-backed issue tracker and memory system for AI coding agents
+- **Install**:
+  ```bash
+  # Install (macOS/Linux)
+  curl -fsSL https://raw.githubusercontent.com/steveyegge/beads/main/scripts/install.sh | bash
+
+  # Initialize in your project (run once)
+  bd init
+
+  # Add to CLAUDE.md or AGENTS.md
+  echo "Use 'bd' for task tracking" >> CLAUDE.md
+  ```
+- **Features**:
+  - Git-native storage (`.beads/` directory, JSONL format)
+  - Dependency-aware task graph
+  - Collision-free hash-based IDs (`bd-a1b2` format)
+  - Hierarchical epic-to-subtask organization
+  - Semantic compaction for context window efficiency
+  - MCP integration for Claude Code
+  - Stealth mode for local-only work
+- **Key Commands**:
+  - `bd ready` - List unblocked tasks ready for execution
+  - `bd create` - Create a new task with priority
+  - `bd dep add` - Link task dependencies
+  - `bd show` - Display full task history
+- **Tags**: task-tracking, memory, git, agents, mcp, project-management
+
+---
+
 ## Prompts
 
 *No prompts added yet.*
