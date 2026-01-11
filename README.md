@@ -78,4 +78,5 @@ Direct Claude Code to this repository and ask it to browse `CATALOG.md` to find 
 |------|---------|
 | [`CATALOG.md`](CATALOG.md) | Browsable index of all available tools |
 | [`CLAUDE.md`](CLAUDE.md) | Instructions for AI agents visiting this repo |
+| [`ROADMAP.md`](ROADMAP.md) | Vision, next steps, and future features |
 | [`AGENTS.md`](AGENTS.md) | Beads task tracking instructions |
