@@ -7,14 +7,14 @@ Browse available tools by category. Each entry includes a description and file p
 | Category | Count | Jump |
 |----------|-------|------|
 | Plugins | 2 | [→ Plugins](#plugins-installed) |
-| External Tools | 1 | [→ External Tools](#external-tools) |
+| External Tools | 2 | [→ External Tools](#external-tools) |
 | Prompts | 0 | [→ Prompts](#prompts) |
 | MCP Servers | 0 | [→ MCP Servers](#mcp-servers) |
 | Skills | 0 | [→ Skills](#skills) |
 | Hooks | 0 | [→ Hooks](#hooks) |
 | Templates | 0 | [→ Templates](#templates) |
 
-**Total**: 3 tools available
+**Total**: 4 tools available
 
 ### Tools at a Glance
 
@@ -23,6 +23,7 @@ Browse available tools by category. Each entry includes a description and file p
 | /local-review | [ALWAYS] |
 | /yc-advisor | [SPECIFIC] |
 | Beads | [EXPERIMENTAL] |
+| GitHub Spec Kit | [EXPERIMENTAL] |
 
 ---
 
@@ -96,6 +97,37 @@ Standalone tools that integrate with Claude Code and AI agents.
   - `bd dep add` - Link task dependencies
   - `bd show` - Display full task history
 - **Tags**: task-tracking, memory, git, agents, mcp, project-management
+
+### GitHub Spec Kit
+**Status: [EXPERIMENTAL]**
+
+- **Repository**: [github/spec-kit](https://github.com/github/spec-kit)
+- **Description**: Toolkit for Spec-Driven Development (SDD) - build high-quality software by focusing on specifications before code
+- **Install**:
+  ```bash
+  # Persistent installation (recommended)
+  uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
+
+  # Initialize a new project
+  specify init <PROJECT_NAME> --ai claude
+
+  # Or initialize in existing project
+  specify init . --ai claude
+  ```
+- **Features**:
+  - Spec-driven workflow: specify → plan → tasks → implement
+  - Multi-agent support (Claude Code, GitHub Copilot, Gemini CLI, Cursor, etc.)
+  - Living specification documents that evolve with code
+  - Constitution files for project principles
+  - Automated task breakdown from specs
+- **Slash Commands** (after `specify init`):
+  - `/speckit.constitution` - Create project governing principles
+  - `/speckit.specify` - Define what to build (the "what" and "why")
+  - `/speckit.plan` - Create technical implementation plan (the "how")
+  - `/speckit.tasks` - Break down into actionable tasks
+  - `/speckit.implement` - Execute tasks to build the feature
+- **Documentation**: [Official Docs](https://github.github.io/spec-kit/) | [GitHub Blog](https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/)
+- **Tags**: sdd, spec-driven, planning, requirements, prd, ai-agents
 
 ---
 
