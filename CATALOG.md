@@ -10,11 +10,11 @@ Browse available tools by category. Each entry includes a description and file p
 | External Tools | 2 | [→ External Tools](#external-tools) |
 | Prompts | 0 | [→ Prompts](#prompts) |
 | MCP Servers | 0 | [→ MCP Servers](#mcp-servers) |
-| Skills | 0 | [→ Skills](#skills) |
+| Skills | 1 | [→ Skills](#skills) |
 | Hooks | 0 | [→ Hooks](#hooks) |
 | Templates | 0 | [→ Templates](#templates) |
 
-**Total**: 4 tools available
+**Total**: 5 tools available
 
 ### Tools at a Glance
 
@@ -24,6 +24,7 @@ Browse available tools by category. Each entry includes a description and file p
 | /yc-advisor | [SPECIFIC] |
 | Beads | [EXPERIMENTAL] |
 | GitHub Spec Kit | [EXPERIMENTAL] |
+| /shop | [ALWAYS] |
 
 ---
 
@@ -159,14 +160,26 @@ Standalone tools that integrate with Claude Code and AI agents.
 
 ## Skills
 
-*No skills added yet.*
+Custom slash commands for Claude Code.
 
-<!-- Example entry:
-### /deploy
-- **Path**: `skills/deploy.md`
-- **Description**: Deploy to staging or production
-- **Tags**: deployment, devops
--->
+### /shop
+**Status: [ALWAYS]**
+
+- **Path**: `skills/shop.md`
+- **Description**: Browse and install tools from this catalog
+- **Install**:
+  ```bash
+  # Create skills directory if needed
+  mkdir -p ~/.claude/skills
+
+  # Download the shop skill
+  curl -o ~/.claude/skills/shop.md https://raw.githubusercontent.com/The-Awkward-Customer/Claude-Setup/main/skills/shop.md
+  ```
+- **Usage**:
+  - `/shop` - Browse the full catalog
+  - `/shop search <term>` - Search for tools
+  - `/shop install <tool>` - Get installation instructions
+- **Tags**: catalog, discovery, tools, install
 
 ---
 
