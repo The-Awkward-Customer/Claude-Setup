@@ -4,6 +4,40 @@ A personal collection of reusable tools, prompts, and configurations for Claude 
 
 > **AI Agents**: See [`CLAUDE.md`](CLAUDE.md) for machine-readable instructions on using this repository.
 
+---
+
+## Share This Link
+
+**Drop this URL into any Claude conversation to browse and install tools:**
+
+```
+https://github.com/The-Awkward-Customer/Claude-Setup
+```
+
+Then ask Claude to:
+- "Browse the tools catalog"
+- "What tools are available?"
+- "Help me install Beads"
+
+### Install `/shop` for Automation
+
+After your first visit, install the `/shop` skill for quick access:
+
+```bash
+# Create skills directory if needed
+mkdir -p ~/.claude/skills
+
+# Download the shop skill
+curl -o ~/.claude/skills/shop.md https://raw.githubusercontent.com/The-Awkward-Customer/Claude-Setup/main/skills/shop.md
+```
+
+Then use `/shop` anywhere:
+- `/shop` - Browse the catalog
+- `/shop search <term>` - Find tools
+- `/shop install <tool>` - Get installation instructions
+
+---
+
 ## Quick Start
 
 1. **Browse** → Check [`CATALOG.md`](CATALOG.md) for available tools
@@ -17,6 +51,8 @@ A personal collection of reusable tools, prompts, and configurations for Claude 
 | /local-review | [ALWAYS] | Code review before commits |
 | /yc-advisor | [SPECIFIC] | Startup advice when needed |
 | Beads | [EXPERIMENTAL] | Task tracking for AI agents |
+| GitHub Spec Kit | [EXPERIMENTAL] | Spec-driven development toolkit |
+| /shop | [ALWAYS] | Browse and install tools from this catalog |
 
 ### Status Legend
 
