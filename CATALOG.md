@@ -13,8 +13,10 @@ Browse available tools by category. Each entry includes a description and file p
 | Skills | 1 | [→ Skills](#skills) |
 | Hooks | 0 | [→ Hooks](#hooks) |
 | Templates | 0 | [→ Templates](#templates) |
+| Guides | 1 | [→ Guides](#guides) |
+| Examples | 6 | [→ Examples](#examples) |
 
-**Total**: 9 tools available
+**Total**: 16 items available
 
 ### Tools at a Glance
 
@@ -29,6 +31,13 @@ Browse available tools by category. Each entry includes a description and file p
 | Beads | External Tool | [EXPERIMENTAL] |
 | GitHub Spec Kit | External Tool | [EXPERIMENTAL] |
 | /shop | Skill | [ALWAYS] |
+| Best Practices Guide | Guide | [REFERENCE] |
+| Skills Example | Example | [LEARNING] |
+| Hooks Examples | Example | [LEARNING] |
+| Rules Examples | Example | [LEARNING] |
+| Agent Example | Example | [LEARNING] |
+| MCP Config Example | Example | [LEARNING] |
+| Holy Trinity Example | Example | [LEARNING] |
 
 ---
 
@@ -300,3 +309,104 @@ Custom slash commands for Claude Code.
 - **Description**: CLAUDE.md template for TypeScript projects
 - **Tags**: typescript, template
 -->
+
+---
+
+## Guides
+
+Learning resources and reference documentation.
+
+### Best Practices Guide
+**Status: [REFERENCE]**
+
+- **Path**: `guides/best-practices-guide.md`
+- **Description**: Comprehensive guide to Claude Code best practices based on the [claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) repository
+- **Topics covered**:
+  - CLAUDE.md structure and memory
+  - Skills and progressive disclosure
+  - Hooks for deterministic automation
+  - MCP servers and external tools
+  - Subagents for isolated execution
+  - Rules for topic-specific instructions
+  - Context engineering techniques
+  - The "Holy Trinity" pattern (Command -> Agent -> Skills)
+- **Includes**:
+  - Your current setup vs. best practices comparison
+  - Quick reference for file locations
+  - Recommended learning path
+- **Tags**: best-practices, learning, reference, claude-code
+
+---
+
+## Examples
+
+Working examples for each best practice concept. Copy these to your project to learn and test.
+
+**Full index**: See `examples/README.md` for detailed instructions and test procedures.
+
+### Skills Example
+**Status: [LEARNING]**
+
+- **Path**: `examples/skills/hello.md`
+- **Description**: Minimal `/hello` skill demonstrating frontmatter and instructions structure
+- **Test**: Copy to `~/.claude/skills/`, run `/hello`
+- **Tags**: skills, beginner, minimal
+
+### Hooks Examples
+**Status: [LEARNING]**
+
+- **Path**: `examples/hooks/`
+- **Description**: PostToolUse and PreToolUse hook examples
+- **Files**:
+  - `format-on-edit.sh` - Auto-format files after Edit tool
+  - `block-secrets.sh` - Block edits to .env and sensitive files
+  - `settings-snippet.json` - Ready-to-copy settings config
+- **Test**: Copy scripts, add to settings.json, edit a file
+- **Tags**: hooks, automation, security
+
+### Rules Examples
+**Status: [LEARNING]**
+
+- **Path**: `examples/rules/`
+- **Description**: Path-scoped and global rule examples
+- **Files**:
+  - `testing.md` - Path-scoped rules for test files (Vitest, AAA pattern)
+  - `api-conventions.md` - Global API conventions (REST, error handling)
+- **Test**: Copy to `.claude/rules/`, ask Claude to write tests or API endpoints
+- **Tags**: rules, testing, api, conventions
+
+### Agent Example
+**Status: [LEARNING]**
+
+- **Path**: `examples/agents/file-organizer.md`
+- **Description**: Feature-specific subagent for organizing imports
+- **Features**:
+  - Restricted tools (Read, Edit only)
+  - Single responsibility
+  - Isolated context
+- **Test**: Copy to `.claude/agents/`, invoke on a file with messy imports
+- **Tags**: agents, subagents, imports, typescript
+
+### MCP Config Example
+**Status: [LEARNING]**
+
+- **Path**: `examples/mcp/example-mcp.json`
+- **Description**: Minimal MCP server configuration (filesystem access)
+- **Usage**:
+  - Project: Save as `.mcp.json`
+  - Global: Merge into `~/.claude.json`
+- **Tags**: mcp, configuration, filesystem
+
+### Holy Trinity Example
+**Status: [LEARNING]**
+
+- **Path**: `examples/holy-trinity/`
+- **Description**: Complete Command -> Agent -> Skills pattern demonstration
+- **Files**:
+  - `README.md` - Pattern explanation
+  - `greet.md` - Entry command (`/greet`)
+  - `greet-agent.md` - Orchestrator agent
+  - `greeting-formatter.md` - Domain skill
+- **Pattern Flow**: `/greet Alice` → `greet-agent` → `greeting-formatter`
+- **Test**: Install all files, run `/greet Alice`
+- **Tags**: holy-trinity, pattern, architecture, advanced

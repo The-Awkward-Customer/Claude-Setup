@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "_comment": [
+    "Minimal MCP server configuration example.",
+    "This file shows how to configure an MCP server for Claude Code.",
+    "",
+    "For PROJECT-LEVEL config: Save as .mcp.json in project root",
+    "For GLOBAL config: Merge mcpServers into ~/.claude.json",
+    "",
+    "This example uses the filesystem server to allow file operations.",
+    "Replace with your own MCP server as needed."
+  ],
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@anthropic/mcp-server-filesystem",
+        "/path/to/allowed/directory"
+      ]
+    }
+  }
+}
